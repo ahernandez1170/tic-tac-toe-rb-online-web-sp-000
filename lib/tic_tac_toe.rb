@@ -30,12 +30,14 @@ def valid_move?(board, index)
       end
   end
   
-  if position_taken?(board, index) == false && on_board?(index) == true
-    return true
-  else
+  def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index] == nil
     return false
+  else
+    return true
   end
 end
+
 
 
 
