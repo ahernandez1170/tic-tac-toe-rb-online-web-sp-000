@@ -52,7 +52,7 @@ def current_player(board)
   end
   return player
 end
-
+# this was difficult
 def turn(board)
   puts "Please choose a number 1-9:"
   user_input = gets.chomp
